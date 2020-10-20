@@ -1,3 +1,2 @@
 # Linear regression
-Linear regression simulator in JavaScript
-lang: Italian
+Linear regression simulator
