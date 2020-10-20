@@ -1,0 +1,208 @@
+/*
+    Animazioni
+*/
+
+@keyframes slideIn {
+    from {margin-right: -300px}
+    to {margin-right: 100px}
+}
+
+@keyframes slideUp {
+    from {margin-left: -800px}
+    to {margin-bottom: 0px}
+}
+
+@keyframes slideBot {
+    from {margin-top: 500px}
+    to {margin-top: 100px}
+}
+
+/*
+    Generail
+*/
+
+*{
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+body{
+    overflow: auto;
+}
+
+#title{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+#title p{
+    font-size: 20px;
+}
+
+/*
+    containers
+*/
+
+#regression_app{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#input_container{
+    margin-top: 100px;
+    border: 3px solid #f1f1f1;
+    display: inline-block;
+    padding: 50px;
+    -webkit-animation-name: slideBot;
+    -webkit-animation-duration: 2s;
+    animation-name: slideBot;
+    animation-duration: 2s;
+}
+
+#button_container{
+    margin-top: 100px;
+}
+
+#table_container{
+    float: right;
+    margin-top: 100px;
+    display: inline-block;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 2s;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    margin-right: 100px;
+}
+
+#graph_container{
+    display: inline-block;
+    margin-top: 100px;
+    -webkit-animation-name: slideUp;
+    -webkit-animation-duration: 2s;
+    animation-name: slideUp;
+    animation-duration: 2s;
+}
+
+#details_container{
+    font-size: 20px;
+    text-align: justify;
+}
+
+#details_container p{
+    padding-left: 122px;
+}
+
+/*
+    input
+*/
+
+#input_title{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 100px;
+}
+
+button{
+    color: #FFF;
+    width: 100%;
+    background-color: #1a9992;
+    padding: 14px 20px;;
+    margin: 8px 0;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #1a9992;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+}
+
+button:hover {
+    -webkit-transition: all 0.30s ease-in;
+    -moz-transition: all 0.30s ease-in;
+    transition: all 0.30s ease-in;
+    box-shadow: inset 0 100px 0 0 #126d68;
+}
+
+#delete_button:hover{
+    box-shadow: inset 0 100px 0 0 #7a1f1f;
+}
+
+#example_button:hover{
+    box-shadow: inset 0 100px 0 0 #730099;
+}
+
+
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/*
+    Table
+*/
+
+#data_table{
+    width: 300px;
+}
+
+tr{
+    height: 40px;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    min-width: 100px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+    transition: 0.5s;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1a9992;
+    color: white;
+    text-align: center;
+}
+
+#data_th3, #data_th25{
+    padding: 0px;
+}
+
+#end_button, #prevision_button{
+    height: 100%;
+    margin: 0px;
+}
+
+#end_button:hover{
+    box-shadow: inset 0 100px 0 0 #7a1f1f;
+}
+
+@media only screen and (max-width: 1500px) {
+    #table_container{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #data_table{
+        display: inline-block;
+    }
+}
+
